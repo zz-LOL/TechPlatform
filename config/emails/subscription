@@ -1,0 +1,12 @@
+# E-mail sent to DSpace users when new items appear in collections they are
+# subscribed to
+#
+# Parameters: {0} is the details of the new collections and items
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: 科技成果及资料发布平台订阅
+管理员已经批准您的论文在相应研究室下发表，赶紧去看看吧：
+
+{0}
+
+科技成果及资料发布平台

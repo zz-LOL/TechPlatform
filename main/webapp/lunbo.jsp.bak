@@ -1,0 +1,51 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: vincent_mac
+  Date: 16/1/8
+  Time: 下午11:39
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=utf-8" language="java"%>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/lunbo.css"/>
+    <script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/lunbo.js"></script>
+  </head>
+  <%
+    String[] title_ch = {"地质图件","大型数据","科技报告","科技论文","英文年报"};
+    String[] title_en = {"geological map","large-scale data","scientific report","scientific paper","English annual report",};
+    String[] digest = {"地质图件是将沉积岩层、火成岩体、地质构造等的形成时代和相关等各种地质体、地质现象，用一定图例表示在某种比例尺地形图上的一种图件。是表示地壳表层岩相、岩性、地层年代、地质构造、岩浆活动、矿产分布等的地图的总称。","地质数据的4V特点，即Volume（大量）、Velocity（高速）、Variety（多样）、Value（价值），地质数据正是大数据的典型代表，是“未来的新石油”，其交叉复用、全息可见的特点能促进可用性的飞跃。","又称研究报告、报告文献。按内容可分为报告书、论文、通报、札记、技术译文、备忘录、特种出版物。发表及时，课题专深，内容新颖、成熟，数据完整，且注重报道进行中的科研工作，是一种重要的信息源。","科技论文在情报学中又称为原始论文或一次文献，它是科学技术人员或其他研究人员在科学实验（或试验）的基础上，对自然科学、工程技术科学、以及人文艺术研究领域的现象（或问题）进行科学分析、综合的研究和阐述，进一步的进行一些现象和问题的研究，总结和创新另外一些结果和结论，并按照各个科技期刊的要求进行电子和书面的表达。","地质研究所一年来蓬勃发展的各项数据的英文报告"};
+    String[] type = {"geological%20map","large-scale%20data","scientific%20report","scientific%20paper","annual%20report%20in%20English"};
+  %>
+    <body>
+      <div id="content">
+        <%for(int i=0;i<=4;i++){%>
+        <div class="bgi">
+          <img src="image/pic<%=i+1%>.png"/>
+        </div>
+        <%}%>
+        <%for(int j=0;j<=4;j++){%>
+        <div class="info-area">
+          <span class="digest"><%=digest[j]%></span>
+          <button class="ck" onclick="javascript:location.href='<%=request.getContextPath()%>/simple-search?query=<%=type[j]%>';">点击查看</button>
+        </div>
+        <%}%>
+        <%for(int m=0;m<=4;m++){%>
+        <div class="title">
+          <p class="title_zh"><%=title_ch[m]%></p>
+          <p class="title_en"><%=title_en[m]%></p>
+        </div>
+        <%}%>
+        <div class="pic-area">
+          <ul>
+            <%for(int k=0;k<=4;k++){%>
+            <li class="pic-mini">
+              <img src="image/pic<%=k+1%>.png" onclick="javascript:location.href='simple-search?query=<%=type[k]%>';"/>
+            </li>
+            <%}%>
+          </ul>
+        </div>
+      </div>
+    </body>
+</html>

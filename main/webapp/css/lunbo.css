@@ -1,0 +1,38 @@
+/* CSS Document */
+*{ margin:0; padding:0;}
+a{ text-decoration:none;}
+li{ list-style-type:none;}
+img{ vertical-align:middle;}
+#content{ width:100%; height:100%;position: relative;overflow: hidden;}
+.bgi{ display:none; position:absolute; width:100%; height:100%; border-radius:6px; z-index:1;}
+.bgi img{ width: 100%; height:100%}
+.info-area{ display:none; width:420px; height:210px; background:url(../image/info-bg.png); background-repeat:no-repeat; background-size:100% 100%; position:absolute; z-index:2; margin: 40px 0 0 50px;}
+.title{ display:none; z-index:10; position: absolute; background:url(../image/title-bg.png); width: 180px; height: 60px; right:0; top: 150px;}
+.title_zh,.title_en{ color: #fff; margin: 4px 10px 0 0; text-align: right;}
+.title_zh{ font-size: 22px; line-height: 30px;}
+.title_en{ font-size: 14px; line-height: 16px;}
+.digest{ position:absolute; color:#FFF; font-size:14px; margin:20px 20px;}
+.ck{ position:absolute; color:#FFF; width:100px; line-height:28px; top:160px; left:290px; background:#0048ff; border:none; border-radius:4px; cursor:pointer;}
+.pic-area{ position: absolute; z-index:4; top:280px; right:10px;}
+.pic-mini{ width:80px; height:60px; float:left; margin: 4px 0; cursor:pointer; opacity:0.5; background:#666;}
+.pic-mini img{ position:relative; width:96%; height:94%; top:2px; left:2px;}
+.next:hover,.preview:hover{background-color:#333;opacity:0.5;}
+
+/*edit-lunbo*/
+.content{ margin: 20px 30px;width: 70%;}
+label{ line-height: 28px;}
+.switch{ height: 80px;}
+.txt{ display:none;width: 100%;height: 200px;}
+.txt>textarea{ width: 100%; height: 100%; line-height: 28px; text-indent: 2em;}
+.buttons{width:160px; height: 100px; margin-left: 36%; margin-top: 50px;}
+.typeItem-focus{ background-color: royalblue; color: #FFFFFF;}
+.buttons ul{ float: right;}
+button{ width:60px; height: 40px; border: 0; color: #fff; font-size: 16px; margin: 0 5px; cursor: pointer;}
+.btn-cancel{ background-color: darkorange;}
+.btn-submit{ display:none; background-color: dodgerblue;}
+.btn-update{ background-color: crimson;}
+.tip{ color: crimson; margin-bottom: 20px;}
+.typeItem{ width:20%; height:24px; float: left; text-align: center; line-height: 24px; border-bottom: 1px solid #666; cursor: pointer;}
+form>p{ display:none; margin-top: 40px;}
+.upload{ width:20%; height: 100px; float: right; margin: 40px auto;}
+.upload>form>input{ opacity: 0; width: 70px; height: 40px; position: absolute; z-index: 1; cursor: pointer;}

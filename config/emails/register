@@ -1,0 +1,15 @@
+# E-mail sent to DSpace users when they register for an account
+#
+# Parameters: {0} is expanded to a special registration URL
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject:中国地质科学院地质研究所  科技成果及资料发布平台
+欢迎注册科技成果及资料发布平台的账号, 成为我们大家庭中的一员，请点击下面链接完成注册：
+
+  {0}
+
+如果你有任何疑问，请联系此平台的管理员。发送邮件至
+geowind@126.com 或者电话咨询 010-68999664。
+
+科技成果及资料发布平台  团队
